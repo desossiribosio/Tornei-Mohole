@@ -1,0 +1,298 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap");
+@font-face {
+	font-family: "ABC Camera";
+	src: url(assets/font/ABCCamera-Bold.woff2) format("woff2"), url(/assets/font/ABCCamera-Bold.woff) format("woff");
+	font-weight: bold;
+	font-style: normal;
+	font-display: swap;
+}
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	a {
+		color: inherit;
+		text-decoration: inherit;
+	}
+}
+body {
+	font-size: $fontsize_desktop;
+	font-family: "Inter", sans-serif;
+}
+.container {
+	grid-template-columns: repeat(2, 1fr);
+	//display: flex;
+	width: 100%;
+	// margin-bottom: 60px;
+}
+#index {
+	position: relative;
+	color: $c_primary;
+	z-index: 100;
+	font-family: "ABC Camera", serif;
+	justify-content: space-between;
+	position: fixed;
+	right: 0;
+	top: 0;
+	flex-direction: column;
+	padding: $space_xl;
+	background-color: $c_four;
+	width: 100%;
+	height: 95vh;
+	opacity: 0;
+	visibility: hidden;
+	transition: all 300ms cubic-bezier(0.335, 0.01, 0.03, 1.36);
+	p {
+		font-size: $fontsize_xxl;
+		font-weight: 500;
+	}
+	a:hover{
+		color: $c_secondary;
+		text-decoration: underline;
+		transition: all 0.5s cubic-bezier(0.335, 0.01, 0.03, 1.36);
+	}
+	path:hover{
+		fill: $c_secondary;
+	}
+	.crediti {
+		font-size: $fontsize_m;
+		font-family: "Inter";
+	}
+}
+
+#index.open {
+	opacity: 1;
+	visibility: visible;
+}
+.index-list{
+	flex-direction: column;
+	width: fit-content;
+}
+
+.default {
+	flex-direction: column;
+	padding: $space_xl;
+	gap: $space_m;
+	overflow: hidden;
+	h4 {
+		text-transform: uppercase;
+		font-weight: 500;
+		margin-left: $space_m;
+	}
+	p {
+		font-size: $fontsize_l;
+	}
+	.media {
+		img {
+			width: 100%;
+		}
+	}
+}
+body.hide {
+	overflow: hidden;
+}
+.calciobalilla.hide {
+	overflow: hidden;
+}
+.ping-pong.hide {
+	overflow: hidden;
+}
+
+// BUTTONS VARIABILI
+.buttons {
+	justify-content: space-around;
+	gap: $space_s;
+	width: 100%;
+	a {
+		cursor: pointer;
+	}
+}
+.button1 {
+	flex: 1;
+	font-size: fontsize_xxs;
+}
+// BUTTONS - PING PONG
+.ping-pong {
+	position: relative;
+	/* position: fixed;
+    width: 50%;
+    top: 0;
+    left: 0; */
+	height: 100vh;
+	overflow-y: scroll;
+	padding-bottom: 110px;
+	a.button1 {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		// width: fit-content;
+		padding: 10px 5px;
+		border: 1.5px solid #000;
+		border-radius: 5px;
+		text-decoration: none;
+		text-align: center;
+		margin-top: 15px;
+		text-transform: uppercase;
+		font-weight: 600;
+		color: #000;
+		transition: all 0.3s;
+	}
+	a.button1:hover {
+		color: #fff;
+		background-color: #000;
+		border-color: #000;
+	}
+}
+
+// SVG
+#ics {
+	position: absolute;
+	width: 30px;
+	height: auto;
+	top: $space_m;
+	right: $space_m;
+	cursor: pointer;
+}
+#cbics {
+	position: absolute;
+	width: 30px;
+	height: auto;
+	top: $space_m;
+	right: $space_m;
+	cursor: pointer;
+}
+#indexics {
+	path {
+		fill: $c_primary;
+	}
+	position: absolute;
+	width: 30px;
+	height: auto;
+	top: $space_m;
+	right: $space_m;
+	cursor: pointer;
+}
+.rules {
+	color: $c_primary;	
+	path{
+		fill: $c_primary;
+	}
+}
+// PING PONG - REGOLAMENTO
+#pprules {
+	z-index: 100;
+	position: fixed;
+	width: 50%;
+	height: 95vh;
+	overflow-y: scroll;
+	flex-direction: column;
+	padding: $space_xl;
+	gap: $space_m;
+	background-color: $c_four;
+	line-height: 27px;
+	h2,
+	h3 {
+		font-family: "ABC Camera", serif;
+	}
+	p {
+		font-size: $fontsize;
+	}
+	opacity: 0;
+	visibility: hidden;
+	transition: all 300ms cubic-bezier(0.335, 0.01, 0.03, 1.36);
+}
+#pprules.open {
+	opacity: 1;
+	visibility: visible;
+}
+// BUTTONS - CALCIO BALILLA
+.calciobalilla {
+	position: relative;
+	/*  position: fixed;
+    width: 50%;
+    top: 0;
+    right: 0; */
+	background-color: $c_secondary;
+	color: $c_primary;
+	height: 100vh;
+	overflow-y: scroll;
+	padding-bottom: 110px;
+	a.button1 {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		// width: fit-content;
+		padding: 1px 5px;
+		border: 1.5px solid #fff;
+		border-radius: 5px;
+		text-decoration: none;
+		text-align: center;
+		margin-top: 15px;
+		text-transform: uppercase;
+		font-weight: 600;
+		color: #fff;
+		transition: all 0.3s;
+	}
+	a.button1:hover {
+		color: #000;
+		background-color: #fff;
+		border-color: #fff;
+	}
+}
+
+// CALCIO BARILLA - REGOLAMENTO
+#cbrules {
+	z-index: 100;
+	position: fixed;
+	width: 50%;
+	height: 95vh;
+	overflow-y: scroll;
+	flex-direction: column;
+	padding: $space_xl;
+	gap: $space_m;
+	background-color: $c_four;
+	line-height: 27px;
+	h2,
+	h3 {
+		font-family: "ABC Camera", serif;
+	}
+	p {
+		font-size: $fontsize;
+	}
+	opacity: 0;
+	visibility: hidden;
+	transition: all 300ms cubic-bezier(0.335, 0.01, 0.03, 1.36);
+}
+#cbrules.open {
+	opacity: 1;
+	visibility: visible;
+}
+.introduzione {
+	font-size: $fontsize_xs;
+	margin-top: $space;
+	a {
+		text-decoration: underline;
+	}
+}
+// NAVBAR BOTTOM
+.nav {
+	z-index: 200;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100vw;
+	// background-color: $c_secondary;
+	background-color: $c_four;
+	color: $c_primary;
+	padding: $space $space_xl;
+	// Flex
+	justify-content: space-between;
+	align-items: center;
+	.index {
+		text-align: center;
+		cursor: pointer;
+	}
+	img {
+		width: 25px;
+	}
+}

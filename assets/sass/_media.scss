@@ -1,0 +1,52 @@
+@media (max-width: 768px) {
+  body {
+    font-size: $fontsize;
+  }
+  .container {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    height: 100%;
+  }
+  .default{
+    overflow-y: hidden;
+  }
+  .ping-pong {
+    height: 100%;
+    padding-bottom: $space_xl;
+  }
+  .calciobalilla {
+    height: 100%;
+    padding-bottom: $space_xl;
+  }
+  .introduzione {
+    font-size: $fontsize_xxs;
+  }
+  #pprules {
+    width: 100%;
+  }
+  #cbrules {
+    width: 100%;
+  }
+
+  #index {
+    justify-content: space-between;
+    align-content: center;
+    flex-direction: column;
+    padding: $space_xl;
+    width: 100%;
+    height: 100%;
+    p {
+      font-size: $fontsize_xxl;
+      font-weight: 500;
+    }
+    .crediti {
+      font-size: $fontsize_s;
+      font-family: "Inter";
+    }
+  }
+}
+@media (max-width: 1024px) {
+  body {
+    font-size: $fontsize;
+  }
+}

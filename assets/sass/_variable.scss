@@ -1,0 +1,42 @@
+// SPACE
+$space_xs: 0.33em;
+$space_s: 0.66em;
+$space: 1.33em;
+$space_m: 1.66em;
+$space_l: 2em;
+$space_xl: 3em;
+$space_xxl: 4em;
+
+// FONT SIZE
+$fontsize: 16px;
+$fontsize_desktop: 18px;
+
+// FZ PROPORTION
+$fontsize_xxl: 3em;
+$fontsize_xl: 2em;
+$fontsize_l: 1.8em;
+$fontsize_m: 1.3em;
+$fontsize_xm: 1em;
+$fontsize_s: 0.8em;
+$fontsize_xs: 0.6em;
+$fontsize_xxs: 0.4em;
+
+// COLORS
+$c_primary: #FFFFFF;
+$c_secondary: #1C1C1C;
+$c_tertiary: #303030;
+$c_four: #168ac9;
+/* $c_primary: #FFFFFF;
+$c_secondary: #1C1C1C;
+$c_tertiary: #303030;
+$c_four: #f0e404; */
+
+
+// FAST CLASSES
+.flex{
+    display: flex;
+}
+.grid{
+    display: grid;
+}
+
