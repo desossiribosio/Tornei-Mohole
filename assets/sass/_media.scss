@@ -40,8 +40,9 @@
       font-weight: 500;
     }
     .crediti {
-      font-size: $fontsize_s;
+      font-size: $fontsize_xs;
       font-family: "Inter";
+      padding-bottom: $space_xl;
     }
   }
 }

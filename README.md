@@ -1,6 +1,6 @@
 # Tornei - Scuola Mohole
 
-Questo progetto è stato realizzato come parte del corso di sviluppo web alla scuola Mohole. L'obiettivo del progetto è stato quello di creare un sito web per la gestione dei tornei di Ping Pong e Calcio Balilla.
+Questo progetto è stato realizzato come parte del corso di sviluppo web alla scuola Mohole. L'obiettivo del progetto è stato quello di creare un sito web per la gestione dei tornei di Ping Pong e Biliardino.
 
 ## Tecnologie utilizzate
 

@@ -41,6 +41,15 @@ body {
   width: 100%;
 }
 
+.logo {
+  background-image: url(assets/img/mohole_white.png);
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 3em;
+}
+
 #index {
   position: relative;
   color: #FFFFFF;
@@ -79,7 +88,7 @@ body {
   fill: #1C1C1C;
 }
 #index .crediti {
-  font-size: 1.3em;
+  font-size: 0.8em;
   font-family: "Inter";
 }
 
@@ -96,6 +105,10 @@ body {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
+}
+
+.default::-webkit-scrollbar {
+  display: none;
 }
 
 .default {
@@ -117,6 +130,22 @@ body {
 }
 .default .media img {
   width: 100%;
+}
+
+.referenti .referenti1 {
+  font-family: "Inter";
+  font-style: italic;
+  font-weight: 500;
+  font-size: 0.8em;
+}
+.referenti p {
+  font-family: "Inter";
+  font-weight: 300;
+  font-size: 0.6em;
+  padding: 0.33em;
+}
+.referenti a {
+  font-family: "Inter";
 }
 
 body.hide {
@@ -151,9 +180,9 @@ body.hide {
 .ping-pong {
   position: relative;
   /* position: fixed;
-     width: 50%;
-     top: 0;
-     left: 0; */
+    width: 50%;
+    top: 0;
+    left: 0; */
   height: 100vh;
   overflow-y: scroll;
   padding-bottom: 110px;
@@ -168,9 +197,8 @@ body.hide {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 10px 5px;
+  padding: 12px 12px;
   border: 1.5px solid #000;
-  border-radius: 5px;
   text-decoration: none;
   text-align: center;
   margin-top: 15px;
@@ -223,6 +251,15 @@ body.hide {
   fill: #FFFFFF;
 }
 
+.rules::-webkit-scrollbar {
+  display: none;
+}
+
+.rules .default {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
 #pprules {
   z-index: 100;
   position: fixed;
@@ -258,9 +295,9 @@ body.hide {
 .calciobalilla {
   position: relative;
   /*  position: fixed;
-     width: 50%;
-     top: 0;
-     right: 0; */
+    width: 50%;
+    top: 0;
+    right: 0; */
   background-color: #1C1C1C;
   color: #FFFFFF;
   height: 100vh;
@@ -277,9 +314,8 @@ body.hide {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 1px 5px;
+  padding: 12px 12px;
   border: 1.5px solid #fff;
-  border-radius: 5px;
   text-decoration: none;
   text-align: center;
   margin-top: 15px;
@@ -343,7 +379,7 @@ body.hide {
   width: 100vw;
   background-color: #168ac9;
   color: #FFFFFF;
-  padding: 1.33em 3em;
+  padding: 1.66em 3em;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -407,8 +443,9 @@ body.hide {
     font-weight: 500;
   }
   #index .crediti {
-    font-size: 0.8em;
+    font-size: 0.6em;
     font-family: "Inter";
+    padding-bottom: 3em;
   }
 }
 @media (max-width: 1024px) {
